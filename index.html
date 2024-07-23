@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body-bg">
+    <div class="container" id="container">
+        <div class="header">
+            <div class="search-box">
+                    <input type="text" placeholder="Enter city name" list="cityNames" class="input-box">
+                    <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+                    <datalist id="cityNames">
+                        <option value="India"></option>
+                        <option value="Indore"></option>
+                        <option value="Dehradun"></option>
+                        <option value="Haridwar"></option>
+                        <option value="Bhopal"></option>
+                        <option value="Amaravati"></option>
+                        <option value="Itanagar"></option>
+                        <option value="Dispur"></option>
+                        <option value="Patna"></option>
+                        <option value="Raipur"></option>
+                        <option value="Panaji"></option>
+                        <option value="Gandhinagar"></option>
+                        <option value="Chandigarh"></option>
+                        <option value="Shimla"></option>
+                        <option value="Ranchi"></option>
+                        <option value="Bangalore"></option>
+                        <option value="Thiruvananthapuram"></option>
+                        <option value="Mumbai"></option>
+                        <option value="Imphal"></option>
+                        <option value="Shillong"></option>
+                        <option value="Aizawl"></option>
+                        <option value="Kohima"></option>
+                        <option value="Bhubaneswar"></option>
+                        <option value="Chandigarh"></option>
+                        <option value="Jaipur"></option>
+                        <option value="Gangtok"></option>
+                        <option value="Chennai"></option>
+                        <option value="Hyderabad"></option>
+                        <option value="Agartala"></option>
+                        <option value="Lucknow"></option>
+                        <option value="Kolkata"></option>
+                        <option value="Balaghat"></option>
+                        <option value="Budhani"></option>
+                        <option value="Betul"></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </datalist>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry location not found!!!</h1>
+            <img src="/assets/404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="\assets\unknown_weather.webp" alt="weater image" class="weather-img">
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">- - - -</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">--%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">--Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/dd9529f436.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
